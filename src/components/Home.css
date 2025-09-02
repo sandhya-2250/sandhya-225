@@ -1,6 +1,6 @@
 .home {
   min-height: 100vh;
-  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   display: flex;
   align-items: center;
   position: relative;
@@ -115,9 +115,9 @@
 }
 
 .intro h1 .highlight {
-  color: #00ffff;
+  color: #f093fb;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-  background: linear-gradient(45deg, #00ffff, #ff0096, #0096ff);
+  background: linear-gradient(45deg, #f093fb, #f5576c, #4facfe);
   background-size: 300% 100%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -201,11 +201,11 @@
 }
 
 .social-links a:hover {
-  background: rgba(0, 255, 255, 0.2);
-  border-color: #00ffff;
-  color: #00ffff;
+  background: rgba(240, 147, 251, 0.2);
+  border-color: #f093fb;
+  color: #f093fb;
   transform: translateY(-5px) scale(1.1);
-  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.4);
+  box-shadow: 0 10px 30px rgba(240, 147, 251, 0.4);
 }
 
 .cta-buttons {
@@ -232,7 +232,7 @@
 }
 
 .btn-primary {
-  background: linear-gradient(45deg, #11998e, #38ef7d);
+  background: linear-gradient(45deg, #667eea, #764ba2);
   color: white;
   padding: 15px 30px;
   border: none;
@@ -243,7 +243,7 @@
   transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
-  box-shadow: 0 4px 15px rgba(17, 153, 142, 0.4);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
   animation: buttonGlow 2s ease-in-out infinite;
 }
 
