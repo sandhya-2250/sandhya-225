@@ -1,0 +1,80 @@
+
+import React from 'react';
+import './Projects.css';
+
+const Projects = () => {
+  const projects = [
+    {
+      id: 1,
+      title: 'Coffee Website',
+      description: 'A modern coffee shop website with responsive design and interactive elements.',
+      image: 'fas fa-coffee',
+      technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+      link: 'https://coffee-website-demo.com'
+    },
+    {
+      id: 2,
+      title: 'Portfolio Website',
+      description: 'A creative portfolio website showcasing modern design principles.',
+      image: 'fas fa-laptop-code',
+      technologies: ['React.js', 'CSS', 'JavaScript'],
+      link: 'https://portfolio-demo.com'
+    },
+    {
+      id: 3,
+      title: 'E-commerce Site',
+      description: 'A full-featured e-commerce website with shopping cart functionality.',
+      image: 'fas fa-shopping-cart',
+      technologies: ['React.js', 'CSS', 'JavaScript', 'Bootstrap'],
+      link: 'https://ecommerce-demo.com'
+    },
+    {
+      id: 4,
+      title: 'Business Website',
+      description: 'A professional business website with clean design and user-friendly interface.',
+      image: 'fas fa-building',
+      technologies: ['HTML', 'CSS', 'JavaScript', 'WordPress'],
+      link: 'https://business-demo.com'
+    }
+  ];
+
+  const handleProjectClick = (link) => {
+    window.open(link, '_blank', 'noopener,noreferrer');
+  };
+
+  return (
+    <section id="projects" className="projects">
+      <div className="container">
+        <h2 className="section-title">My Projects</h2>
+        <div className="projects-grid">
+          {projects.map((project) => (
+            <div 
+              key={project.id} 
+              className="project-card"
+              onClick={() => handleProjectClick(project.link)}
+            >
+              <div className="project-image">
+                <i className={project.image}></i>
+              </div>
+              <div className="project-content">
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+                <div className="technologies">
+                  {project.technologies.map((tech, index) => (
+                    <span key={index} className="tech-tag">{tech}</span>
+                  ))}
+                </div>
+                <div className="project-link">
+                  <span>View Project</span>
+                  <i className="fas fa-external-link-alt"></i>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;
