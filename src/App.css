@@ -48,12 +48,13 @@ body {
 .section-title {
   text-align: center;
   font-size: 2.5rem;
-  color: #2c3e50;
+  color: #ffffff;
   margin-bottom: 3rem;
   font-weight: 600;
   position: relative;
   opacity: 0;
   animation: fadeInScale 1s ease-out both;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .section-title::after {
@@ -64,9 +65,10 @@ body {
   transform: translateX(-50%);
   width: 80px;
   height: 4px;
-  background: linear-gradient(45deg, #3498db, #2980b9);
+  background: linear-gradient(45deg, #00ffff, #ff0096);
   border-radius: 2px;
   animation: gradient 3s ease infinite;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
 }
 
 html {
