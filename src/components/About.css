@@ -1,6 +1,6 @@
 .about {
   padding: 80px 0;
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  background: linear-gradient(135deg, #2d1b69 0%, #11998e 100%);
   overflow: hidden;
 }
 
@@ -66,7 +66,7 @@
   transform: translateX(-50%);
   width: 80px;
   height: 4px;
-  background: linear-gradient(45deg, #833ab4, #fd1d1d, #e22d01);
+  background: linear-gradient(45deg, #11998e, #38ef7d, #11998e);
   background-size: 200% 100%;
   border-radius: 2px;
   animation: gradient 3s ease infinite;
@@ -105,7 +105,9 @@
 }
 
 .personal-info {
-  background: #16213e;
+  background: rgba(17, 153, 142, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(17, 153, 142, 0.3);
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 5px 25px rgba(0,0,0,0.2);
@@ -136,7 +138,7 @@
 .info-item:nth-child(4) { animation-delay: 1.4s; }
 
 .info-item:hover {
-  background: #1a1a2e;
+  background: rgba(17, 153, 142, 0.3);
   padding-left: 1rem;
   border-radius: 8px;
 }
@@ -158,22 +160,55 @@
 .image-frame {
   width: 300px;
   height: 400px;
-  background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 100%);
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
   background-size: 200% 200%;
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 6rem;
-  color: white;
-  box-shadow: 0 15px 50px rgba(131, 42, 180, 0.3);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 15px 50px rgba(17, 153, 142, 0.4);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   animation: gradient 5s ease infinite;
 }
 
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(17, 153, 142, 0.8) 0%, rgba(56, 239, 125, 0.8) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: white;
+  opacity: 0;
+  transition: all 0.4s ease;
+  border-radius: 20px;
+}
+
+.image-frame:hover .image-overlay {
+  opacity: 1;
+}
+
 .image-frame:hover {
   transform: scale(1.05) rotate(2deg);
-  box-shadow: 0 25px 70px rgba(131, 42, 180, 0.4);
+  box-shadow: 0 25px 70px rgba(17, 153, 142, 0.6);
+}
+
+.image-frame:hover .profile-image {
+  transform: scale(1.1);
 }
 
 @media (max-width: 768px) {

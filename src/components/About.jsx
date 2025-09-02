@@ -37,7 +37,14 @@ const About = () => {
           </div>
           <div className="about-image">
             <div className="image-frame">
-              <i className="fas fa-code"></i>
+              <img 
+                src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" 
+                alt="Sandhya Shrestha" 
+                className="profile-image"
+              />
+              <div className="image-overlay">
+                <i className="fas fa-code"></i>
+              </div>
             </div>
           </div>
         </div>
