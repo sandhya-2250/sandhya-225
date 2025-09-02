@@ -16,33 +16,7 @@
   animation: float 10s ease-in-out infinite;
 }
 
-@keyframes projectSlideIn {
-  from {
-    opacity: 0;
-    transform: translateY(50px) rotateX(20deg);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) rotateX(0);
-  }
-}
 
-@keyframes projectHover {
-  0%, 100% { transform: perspective(1000px) rotateY(0deg) rotateX(0deg); }
-  25% { transform: perspective(1000px) rotateY(5deg) rotateX(2deg); }
-  75% { transform: perspective(1000px) rotateY(-5deg) rotateX(-2deg); }
-}
-
-@keyframes imageGlow {
-  0%, 100% { 
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    box-shadow: 0 0 30px rgba(102, 126, 234, 0.3);
-  }
-  50% { 
-    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
-    box-shadow: 0 0 50px rgba(118, 75, 162, 0.5);
-  }
-}
 
 .projects .container {
   max-width: 1200px;
@@ -77,17 +51,11 @@
   box-shadow: 0 10px 40px rgba(0,0,0,0.2);
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   cursor: pointer;
-  opacity: 0;
-  animation: projectSlideIn 0.8s ease-out both;
+  opacity: 1;
   position: relative;
   border: 1px solid rgba(255, 255, 255, 0.3);
   transform-style: preserve-3d;
 }
-
-.project-card:nth-child(1) { animation-delay: 0.2s; }
-.project-card:nth-child(2) { animation-delay: 0.4s; }
-.project-card:nth-child(3) { animation-delay: 0.6s; }
-.project-card:nth-child(4) { animation-delay: 0.8s; }
 
 .project-card::before {
   content: '';
@@ -109,7 +77,6 @@
 .project-card:hover {
   transform: translateY(-20px) scale(1.02);
   box-shadow: 0 25px 80px rgba(0,0,0,0.3);
-  animation: projectHover 3s ease-in-out infinite;
 }
 
 .project-image {
@@ -122,7 +89,6 @@
   color: white;
   position: relative;
   transition: all 0.4s ease;
-  animation: imageGlow 4s ease-in-out infinite;
 }
 
 .project-card:hover .project-image {
@@ -190,13 +156,7 @@
   font-size: 0.85rem;
   font-weight: 500;
   transition: all 0.3s ease;
-  transform: scale(0.9);
-  animation: fadeInScale 0.6s ease-out both;
 }
-
-.tech-tag:nth-child(1) { animation-delay: 0.1s; }
-.tech-tag:nth-child(2) { animation-delay: 0.2s; }
-.tech-tag:nth-child(3) { animation-delay: 0.3s; }
 
 .project-card:hover .tech-tag {
   transform: scale(1);
@@ -250,13 +210,3 @@
   100% { transform: translateY(0px) rotateZ(0deg); }
 }
 
-@keyframes fadeInScale {
-  from {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
