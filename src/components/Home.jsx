@@ -36,7 +36,12 @@ const Home = () => {
           </div>
           <div className="hero-image">
             <div className="image-placeholder">
-              <i className="fas fa-user-circle"></i>
+              <div className="profile-avatar">
+                <div className="avatar-ring"></div>
+                <div className="avatar-inner">
+                  <i className="fas fa-user"></i>
+                </div>
+              </div>
             </div>
           </div>
         </div>
