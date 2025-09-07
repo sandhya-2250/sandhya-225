@@ -22,31 +22,31 @@ const Gallery = () => {
     },
     {
       id: 3,
+      title: 'Childhood Memories',
+      category: 'Personal',
+      image: '/attached_assets/image_1757260014108.png',
+      description: 'Sweet childhood memories captured'
+    },
+    {
+      id: 4,
       title: 'Casual Portrait',
       category: 'Personal',
       image: '/attached_assets/image_1757260308820.png',
       description: 'Casual everyday photography'
     },
     {
-      id: 4,
+      id: 5,
       title: 'Elegant Style',
       category: 'Fashion',
       image: '/attached_assets/image_1757260360007.png',
       description: 'Elegant fashion photography'
     },
     {
-      id: 5,
+      id: 6,
       title: 'Traditional Beauty',
       category: 'Cultural',
       image: '/attached_assets/image_1757260380775.png',
       description: 'Showcasing traditional Nepali beauty'
-    },
-    {
-      id: 6,
-      title: 'Childhood Memories',
-      category: 'Personal',
-      image: '/attached_assets/image_1757260014108.png',
-      description: 'Sweet childhood memories captured'
     }
   ];
 
