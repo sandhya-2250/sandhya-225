@@ -14,19 +14,19 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: 'Portfolio Website',
-      description: 'A creative portfolio website showcasing modern design principles.',
-      image: 'fas fa-laptop-code',
-      technologies: ['React.js', 'CSS', 'JavaScript'],
-      link: 'https://portfolio-demo.com'
-    },
-    {
-      id: 3,
       title: 'Calculator',
       description: 'A functional calculator application with clean design and user-friendly interface.',
       image: 'fas fa-calculator',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       link: 'https://sandhyacalculator.netlify.app/'
+    },
+    {
+      id: 3,
+      title: 'E-commerce Website',
+      description: 'A simple e-commerce website with product listings and shopping functionality.',
+      image: 'fas fa-shopping-cart',
+      technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+      link: 'https://sandhyaecommerce.netlify.app/'
     },
     {
       id: 4,

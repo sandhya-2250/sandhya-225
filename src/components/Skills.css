@@ -1,5 +1,6 @@
 .skills {
   padding: 80px 0;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
   position: relative;
   overflow: hidden;
 }
