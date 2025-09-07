@@ -29,10 +29,10 @@ const Gallery = () => {
     },
     {
       id: 4,
-      title: 'Casual Portrait',
-      category: 'Personal',
-      image: '/attached_assets/image_1757260308820.png',
-      description: 'Casual everyday photography'
+      title: 'Traditional Elegance',
+      category: 'Cultural',
+      image: '/attached_assets/image_1757263418882.png',
+      description: 'Beautiful traditional attire in natural setting'
     },
     {
       id: 5,
@@ -43,10 +43,10 @@ const Gallery = () => {
     },
     {
       id: 6,
-      title: 'Traditional Beauty',
-      category: 'Cultural',
-      image: '/attached_assets/image_1757260380775.png',
-      description: 'Showcasing traditional Nepali beauty'
+      title: 'Sweet Moments',
+      category: 'Personal',
+      image: '/attached_assets/image_1757263525506.png',
+      description: 'Adorable childhood moments captured beautifully'
     }
   ];
 
