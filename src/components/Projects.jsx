@@ -26,7 +26,7 @@ const Projects = () => {
       description: 'A simple e-commerce website with product listings and shopping functionality.',
       image: 'fas fa-shopping-cart',
       technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
-      link: 'https://sandhyaecommerce.netlify.app/'
+      link: '/ecommerce/index.html'
     },
     {
       id: 4,
