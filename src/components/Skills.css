@@ -1,20 +1,9 @@
 .skills {
   padding: 80px 0;
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
   position: relative;
   overflow: hidden;
 }
 
-.skills::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><circle cx="30" cy="30" r="2" fill="rgba(255, 255, 255, 0.1)"/></svg>');
-  animation: float 8s ease-in-out infinite;
-}
 
 
 

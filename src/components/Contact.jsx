@@ -28,7 +28,7 @@ const Contact = () => {
       `Message:\n${formData.message}`
     );
     
-    window.location.href = `mailto:sandhya@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:shresthasandhya225@gmail.com?subject=${subject}&body=${body}`;
     
     // Reset form
     setFormData({
@@ -55,7 +55,15 @@ const Contact = () => {
               <i className="fas fa-envelope"></i>
               <div>
                 <h4>Email</h4>
-                <p>sandhya@gmail.com</p>
+                <p>shresthasandhya225@gmail.com</p>
+              </div>
+            </div>
+            
+            <div className="contact-item">
+              <i className="fas fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:+9779767413655">+977-9767413655</a></p>
               </div>
             </div>
             
@@ -63,21 +71,21 @@ const Contact = () => {
               <i className="fas fa-map-marker-alt"></i>
               <div>
                 <h4>Location</h4>
-                <p>Arghakhanchi, Nepal</p>
+                <p><a href="https://www.google.com/maps/place/Bhaktapur,+Nepal" target="_blank" rel="noopener noreferrer">Bhaktapur, Nepal</a></p>
               </div>
             </div>
             
             <div className="social-links">
-              <a href="mailto:sandhya@gmail.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-google"></i>
               </a>
-              <a href="https://github.com/sandhyashrestha" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/sandhya-2250" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-github"></i>
               </a>
-              <a href="https://instagram.com/sandhyashrestha" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/sandhya_9shrestha/" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="https://facebook.com/sandhyashrestha" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/sandhya.shrestha.634210/" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-facebook"></i>
               </a>
             </div>

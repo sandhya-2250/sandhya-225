@@ -10,7 +10,6 @@ const Skills = () => {
     { name: 'CSS', icon: 'fab fa-css3-alt', level: 90 },
     { name: 'Bootstrap', icon: 'fab fa-bootstrap', level: 80 },
     { name: 'C#', icon: 'fas fa-code', level: 75 },
-    { name: 'C', icon: 'fas fa-code', level: 70 },
     { name: 'Figma', icon: 'fab fa-figma', level: 85 },
     { name: 'Git', icon: 'fab fa-git-alt', level: 80 },
     { name: 'WordPress', icon: 'fab fa-wordpress', level: 75 }

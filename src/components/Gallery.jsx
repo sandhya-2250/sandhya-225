@@ -8,45 +8,45 @@ const Gallery = () => {
   const galleryImages = [
     {
       id: 1,
-      title: 'Coffee Website Design',
-      category: 'Web Design',
-      image: 'fas fa-coffee',
-      description: 'Modern coffee shop website with clean aesthetics'
+      title: 'Traditional Attire',
+      category: 'Cultural',
+      image: '/attached_assets/image_1757259983099.png',
+      description: 'Beautiful traditional Nepali cultural dress'
     },
     {
       id: 2,
-      title: 'E-commerce Interface',
-      category: 'UI/UX',
-      image: 'fas fa-shopping-bag',
-      description: 'User-friendly shopping experience design'
+      title: 'Festive Look',
+      category: 'Traditional',
+      image: '/attached_assets/image_1757260001813.png',
+      description: 'Celebrating cultural festivals in traditional wear'
     },
     {
       id: 3,
-      title: 'Mobile App UI',
-      category: 'Mobile Design',
-      image: 'fas fa-mobile-alt',
-      description: 'Responsive mobile application interface'
+      title: 'Casual Portrait',
+      category: 'Personal',
+      image: '/attached_assets/image_1757260308820.png',
+      description: 'Casual everyday photography'
     },
     {
       id: 4,
-      title: 'Dashboard Design',
-      category: 'UI/UX',
-      image: 'fas fa-chart-line',
-      description: 'Analytics dashboard with data visualization'
+      title: 'Elegant Style',
+      category: 'Fashion',
+      image: '/attached_assets/image_1757260360007.png',
+      description: 'Elegant fashion photography'
     },
     {
       id: 5,
-      title: 'Portfolio Website',
-      category: 'Web Design',
-      image: 'fas fa-laptop-code',
-      description: 'Creative portfolio with modern animations'
+      title: 'Traditional Beauty',
+      category: 'Cultural',
+      image: '/attached_assets/image_1757260380775.png',
+      description: 'Showcasing traditional Nepali beauty'
     },
     {
       id: 6,
-      title: 'Brand Identity',
-      category: 'Branding',
-      image: 'fas fa-palette',
-      description: 'Complete brand identity and logo design'
+      title: 'Childhood Memories',
+      category: 'Personal',
+      image: '/attached_assets/image_1757260014108.png',
+      description: 'Sweet childhood memories captured'
     }
   ];
 
@@ -72,7 +72,11 @@ const Gallery = () => {
               onClick={() => openModal(image)}
             >
               <div className="gallery-image">
-                <i className={image.image}></i>
+                {image.image.startsWith('/') ? (
+                  <img src={image.image} alt={image.title} className="gallery-photo" />
+                ) : (
+                  <i className={image.image}></i>
+                )}
                 <div className="gallery-overlay">
                   <div className="gallery-content">
                     <h3>{image.title}</h3>
@@ -91,7 +95,11 @@ const Gallery = () => {
                 <i className="fas fa-times"></i>
               </button>
               <div className="modal-image">
-                <i className={selectedImage.image}></i>
+                {selectedImage.image.startsWith('/') ? (
+                  <img src={selectedImage.image} alt={selectedImage.title} className="modal-photo" />
+                ) : (
+                  <i className={selectedImage.image}></i>
+                )}
               </div>
               <div className="modal-info">
                 <h3>{selectedImage.title}</h3>

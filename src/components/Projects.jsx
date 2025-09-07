@@ -10,7 +10,7 @@ const Projects = () => {
       description: 'A modern coffee shop website with responsive design and interactive elements.',
       image: 'fas fa-coffee',
       technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
-      link: 'https://coffee-website-demo.com'
+      link: 'http://127.0.0.1:5500/coffeeshop.html'
     },
     {
       id: 2,
@@ -22,11 +22,11 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: 'E-commerce Site',
-      description: 'A full-featured e-commerce website with shopping cart functionality.',
-      image: 'fas fa-shopping-cart',
-      technologies: ['React.js', 'CSS', 'JavaScript', 'Bootstrap'],
-      link: 'https://ecommerce-demo.com'
+      title: 'Calculator',
+      description: 'A functional calculator application with clean design and user-friendly interface.',
+      image: 'fas fa-calculator',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      link: 'https://sandhyacalculator.netlify.app/'
     },
     {
       id: 4,
