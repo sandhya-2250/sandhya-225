@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import './Gallery.css';
 
@@ -15,24 +14,24 @@ const Gallery = () => {
     },
     {
       id: 2,
-      title: 'Festive Look',
-      category: 'Traditional',
+      title: 'Graceful Presence',
+      category: 'Personal',
       image: '/attached_assets/image_1757260001813.png',
-      description: 'Celebrating cultural festivals in traditional wear'
+      description: 'Beauty captured in natural light'
     },
     {
       id: 3,
-      title: 'Childhood Memories',
-      category: 'Personal',
+      title: 'Traditional Elegance',
+      category: 'Cultural',
       image: '/attached_assets/image_1757260014108.png',
-      description: 'Sweet childhood memories captured'
+      description: 'Wearing tradition with quiet pride'
     },
     {
       id: 4,
-      title: 'Traditional Elegance',
-      category: 'Cultural',
+      title: 'Pink saree',
+      category: 'Personal',
       image: '/attached_assets/image_1757263418882.png',
-      description: 'Beautiful traditional attire in natural setting'
+      description: 'Beautiful  attire in natural setting'
     },
     {
       id: 5,
@@ -43,7 +42,7 @@ const Gallery = () => {
     },
     {
       id: 6,
-      title: 'Sweet Moments',
+      title: 'Childhood Memories',
       category: 'Personal',
       image: '/attached_assets/image_1757263525506.png',
       description: 'Adorable childhood moments captured beautifully'
@@ -62,7 +61,8 @@ const Gallery = () => {
     <section id="gallery" className="gallery">
       <div className="container">
         <h2 className="section-title">Gallery</h2>
-        <p className="section-subtitle">A showcase of my creative work and designs</p>
+        <p className="section-subtitle">A curated collection of my original images, capturing moments, moods, and
+           stories through visual composition. Each piece represents a unique perspective and creative expression.</p>
         
         <div className="gallery-grid">
           {galleryImages.map((image) => (
@@ -115,3 +115,4 @@ const Gallery = () => {
 };
 
 export default Gallery;
+

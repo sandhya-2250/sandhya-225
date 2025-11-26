@@ -10,7 +10,7 @@ const Home = () => {
           <div className="intro">
             <h1>Hi, I'm <span className="highlight">Sandhya Shrestha</span></h1>
             <h2>Web Developer & Designer</h2>
-            <p>18 years old passionate developer from Arghakhanchi, Nepal. I create modern, responsive websites and love bringing ideas to life through code.</p>
+            <p>18 years old passionate developer from Bhaktapur, Nepal. I create modern, responsive websites and love bringing ideas to life through code.</p>
             <div className="social-links">
               <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-google"></i>

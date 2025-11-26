@@ -11,7 +11,7 @@ const About = () => {
           <div className="about-text">
             <h3>Hello! I'm Sandhya Shrestha</h3>
             <p>
-              I'm an 18-year-old passionate web developer from Arghakhanchi, Nepal. My journey in 
+              I'm an 18-year-old passionate web developer from Bhakatpur, Nepal. My journey in 
               programming started early, and I've been dedicated to creating beautiful, functional 
               websites that make a difference.
             </p>
@@ -25,13 +25,13 @@ const About = () => {
                 <strong>Age:</strong> 18 years old
               </div>
               <div className="info-item">
-                <strong>Location:</strong> Arghakhanchi, Nepal
+                <strong>Location:</strong> Bhaktapur, Nepal
               </div>
               <div className="info-item">
                 <strong>Education:</strong> Class 10 (3.15 GPA)
               </div>
               <div className="info-item">
-                <strong>Hobbies:</strong> Dancing, Reading, Coding
+                <strong>Hobbies:</strong> Dancing, Reading, Coding, Photography
               </div>
             </div>
           </div>

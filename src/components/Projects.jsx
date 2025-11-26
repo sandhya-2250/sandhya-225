@@ -15,27 +15,27 @@ const Projects = () => {
     {
       id: 2,
       title: 'Calculator',
-      description: 'A functional calculator application with clean design and user-friendly interface.',
+      description: 'A functional calculator web application with clean design and responsive interface.',
       image: 'fas fa-calculator',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       link: 'https://sandhyacalculator.netlify.app/'
     },
     {
       id: 3,
+      title: 'E-commerce Site',
+      description: 'A full-featured e-commerce website with shopping cart functionality.',
+      image: 'fas fa-shopping-cart',
+      technologies: ['React.js', 'CSS', 'JavaScript', 'Bootstrap'],
+      link: 'https://ecommerce-demo.com'
+    },
+    {
+      id: 4,
       title: 'E-commerce Website',
       description: 'A simple e-commerce website with product listings and shopping functionality.',
       image: 'fas fa-shopping-cart',
       technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
       link: '/ecommerce/index.html'
     },
-    {
-      id: 4,
-      title: 'Business Website',
-      description: 'A professional business website with clean design and user-friendly interface.',
-      image: 'fas fa-building',
-      technologies: ['HTML', 'CSS', 'JavaScript', 'WordPress'],
-      link: 'https://business-demo.com'
-    }
   ];
 
   const handleProjectClick = (link) => {
@@ -59,12 +59,12 @@ const Projects = () => {
               <div className="project-content">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
-                <div className="technologies">
+                <div className="project-tech">
                   {project.technologies.map((tech, index) => (
                     <span key={index} className="tech-tag">{tech}</span>
                   ))}
                 </div>
-                <div className="project-link">
+                <div className="project-links">
                   <span>View Project</span>
                   <i className="fas fa-external-link-alt"></i>
                 </div>
@@ -78,3 +78,5 @@ const Projects = () => {
 };
 
 export default Projects;
+
+
