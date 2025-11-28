@@ -30,7 +30,7 @@ const Home = () => {
               <button className="btn-primary" onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}>
                 View My Work
               </button>
-              <a className="btn-secondary" href="/attached_assets/Sandhya cv_1757259829961.pdf" target="_blank" rel="noopener noreferrer">
+              <a className="btn-secondary" href="../../public/assets/Sandhya_CV.pdf" target="_blank" rel="noopener noreferrer">
                 View My CV
               </a>
             </div>
