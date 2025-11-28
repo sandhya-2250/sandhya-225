@@ -1,5 +1,6 @@
 
 import React from 'react';
+import home from "../../public/assets/home.png";
 import './Home.css';
 
 const Home = () => {
@@ -39,7 +40,7 @@ const Home = () => {
               <div className="profile-avatar">
                 <div className="avatar-ring"></div>
                 <div className="avatar-inner">
-                  <img src="/attached_assets/image_1757259908308.png" alt="Sandhya Shrestha" className="profile-image" />
+                  <img src={home} alt="Sandhya Shrestha" className="profile-image" />
                 </div>
               </div>
             </div>

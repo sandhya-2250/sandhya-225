@@ -1,5 +1,6 @@
 
 import React from 'react';
+import about from "../../public/assets/about.png";
 import './About.css';
 
 const About = () => {
@@ -38,7 +39,7 @@ const About = () => {
           <div className="about-image">
             <div className="image-frame">
               <img 
-                src="/attached_assets/image_1757259941932.png" 
+                src={about}
                 alt="Sandhya Shrestha" 
                 className="profile-image"
               />

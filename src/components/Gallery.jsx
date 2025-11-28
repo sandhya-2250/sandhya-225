@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
 import './Gallery.css';
+import img_1 from "../../public/assets/img_1.png";
+import img_2 from "../../public/assets/img_2.png";
+import img_3 from "../../public/assets/img_3.png";
+import img_4 from "../../public/assets/img_4.png";
+import img_5 from "../../public/assets/img_5.png";
+import img_6 from "../../public/assets/img_6.png";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -9,42 +15,42 @@ const Gallery = () => {
       id: 1,
       title: 'Traditional Attire',
       category: 'Cultural',
-      image: '/attached_assets/image_1757259983099.png',
+      image: img_1,
       description: 'Beautiful traditional Nepali cultural dress'
     },
     {
       id: 2,
       title: 'Graceful Presence',
       category: 'Personal',
-      image: '/attached_assets/image_1757260001813.png',
+      image: img_2,
       description: 'Beauty captured in natural light'
     },
     {
       id: 3,
       title: 'Traditional Elegance',
       category: 'Cultural',
-      image: '/attached_assets/image_1757260014108.png',
+      image: img_3,
       description: 'Wearing tradition with quiet pride'
     },
     {
       id: 4,
       title: 'Pink saree',
       category: 'Personal',
-      image: '/attached_assets/image_1757263418882.png',
+      image: img_4,
       description: 'Beautiful  attire in natural setting'
     },
     {
       id: 5,
       title: 'Elegant Style',
       category: 'Fashion',
-      image: '/attached_assets/image_1757260360007.png',
+      image: img_5,
       description: 'Elegant fashion photography'
     },
     {
       id: 6,
       title: 'Childhood Memories',
       category: 'Personal',
-      image: '/attached_assets/image_1757263525506.png',
+      image: img_6,
       description: 'Adorable childhood moments captured beautifully'
     }
   ];
